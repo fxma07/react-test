@@ -68,7 +68,7 @@ export default function Login() {
         } else {
             localStorage.setItem('token', data.accessToken)
 
-            fetch('http://localhost:4000/api/users/profile', {
+            fetch('https://calm-retreat-45188.herokuapp.com/api/users/profile', {
                 headers: {
                     Authorization: `Bearer ${data.accessToken}`
                 }
