@@ -17,7 +17,7 @@ export default function EditProfile() {
 
 
     useEffect(()=>{
-        fetch('http://localhost:4000/api/users/profile',{
+        fetch('https://calm-retreat-45188.herokuapp.com/api/users/profile',{
             headers:{
                 Authorization: `Bearer ${localStorage.getItem('token')}`
             }
@@ -45,8 +45,8 @@ export default function EditProfile() {
   function updateUserProfile(e) {
     e.preventDefault();
 
-    fetch("http://localhost:4000/api/users/update-profile", {
-      method: "PATCH",
+    fetch("https://calm-retreat-45188.herokuapp.com/api/users/update-profile", {
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
         'Authorization': `Bearer ${localStorage.getItem('token')}`

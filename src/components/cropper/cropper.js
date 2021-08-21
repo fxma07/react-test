@@ -62,7 +62,7 @@ export default function RenderCropper({handleCropper, setAvatar}) {
             const formdata = new FormData()
             formdata.append('croppedImage', convertedUrlToFile)
 
-            const res = await fetch('http://localhost:4000/api/users/setProfilePic', {
+            const res = await fetch('https://calm-retreat-45188.herokuapp.com/api/users/setProfilePic', {
                 method: 'POST',
                 body: formdata,
                 headers: {

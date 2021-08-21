@@ -46,7 +46,7 @@ export default function Register() {
   function registerUser(e) {
     e.preventDefault();
 
-    fetch("http://localhost:4000/api/users/register", {
+    fetch("https://calm-retreat-45188.herokuapp.com/api/users/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

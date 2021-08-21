@@ -45,7 +45,7 @@ export default function Login() {
   function loginUser(e) {
     e.preventDefault();
 
-    fetch("http://localhost:4000/api/users/login", 
+    fetch("https://calm-retreat-45188.herokuapp.com/api/users/login", 
     {
       method: 'POST',
       headers: {

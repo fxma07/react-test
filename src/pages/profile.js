@@ -39,7 +39,7 @@ function Profile() {
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
     useEffect(()=>{
-        fetch('http://localhost:4000/api/users/profile',{
+        fetch('https://calm-retreat-45188.herokuapp.com/api/users/profile',{
             headers:{
                 Authorization: `Bearer ${localStorage.getItem('token')}`
             }
